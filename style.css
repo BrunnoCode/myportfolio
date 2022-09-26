@@ -33,10 +33,33 @@ html {
   align-items: center;
   padding: 0.6rem 1.2rem;
 }
-#inicio .content header .header-container h1 {
+#inicio .content header .header-container .logo h1 {
+  font-family: 'Orbitron';
+  text-transform: uppercase;
+  font-weight: 100;
   text-align: center;
-  color: #ff5080;
+  letter-spacing: 2px;
+  color: #f8f8f8;
 }
+#inicio .content header .header-container .logo p {
+  font-family: 'Orbitron';
+  color: rgba(255, 255, 255, 0.644);
+  text-align: right;
+  font-weight: 100;
+  font-size: .7rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+#inicio .content header .header-container .logo {
+  position: relative;
+}
+#inicio .content header .header-container .logo .atom {
+  position: absolute;
+  right: -47px;
+  bottom: 1px;
+  
+}
+
 #inicio .content header .header-container nav ul {
   list-style: none;
   display: flex;
@@ -86,22 +109,22 @@ html {
   text-align: center;
 }
 #inicio .content .apresentacao h2 span {
-  font-size: 25px;
+  font-size: 1.56rem;
   color: #ff5080;
 }
 #inicio .content .apresentacao .description {
-  max-width: 700px;
-  margin: 25px auto;
-  font-size: 18px;
+  max-width: 43.75rem;
+  margin: 1.56rem auto;
+  font-size: 1.1rem;
   text-align: center;
 }
 #inicio .content .apresentacao a {
   text-decoration: none;
   display: inline-block;
-  margin: 25px;
-  padding: 20px 25px;
+  margin: 1.5rem;
+  padding: 1.2rem 1.5rem;
   border: 2px solid #fff;
-  border-radius: 50px;
+  border-radius: 3.1rem;
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
@@ -116,24 +139,24 @@ html {
 }
 /* #################################### ABOUT SECTION ######################### */
 #about {
-  max-width: 1100px;
+  max-width: 68.7rem;
   margin: auto;
-  padding: 100px 15px;
+  padding: 6.2rem .9rem;
   color: #111135;
   display: flex;
 }
 #about .foto-content {
-  max-width: 400px;
-  margin-right: 80px;
+  max-width: 25rem;
+  margin-right: 5rem;
 }
 #about .foto-content img {
-  padding: 0 10px;
+  padding: 0 .6rem;
   width: 100%;
-  border-radius: 20px;
-  background-color: #f3f3f3;
+  border-radius: 1.2rem;
+  background-color: #c44670;
 }
 #about .about .titulo-section {
-  font-size: 22px;
+  font-size: 1.3rem;
   text-transform: uppercase;
   color: #111135;
   text-decoration: underline;
@@ -141,5 +164,90 @@ html {
   text-decoration-thickness: 5px;
 }
 #about .about h2 {
-  font-size: 34px;
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin: 1.2rem 0;
+  letter-spacing: 2px;
+}
+#about .about h2 span {
+  color: #ff5080;
+}
+#about .about h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+  letter-spacing: 1px;
+}
+#about .about p {
+  font-size: .8rem;
+  line-height:1.5rem;
+  color: #565656;
+  margin-bottom: .7rem;
+}
+
+#about .about a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  padding: .6rem 1.2rem;
+  border-radius: 1.8rem;
+  border: 1px solid #000;
+  margin-top: 1.8rem;
+  transition: .5s;
+}
+#about .about a:hover {
+  background: #ff5080;
+  color: #fff;
+}
+/* #################################### SERVICES SECTION ######################### */
+#servicos {
+  padding: 6.2rem .9rem;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+#servicos .titulo-section {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: #111135;
+  text-decoration: underline;
+  text-decoration-color: #d3d3d3;
+  text-decoration-thickness: 5px;
+}
+#servicos .fila {
+  display: flex;
+  justify-content: space-between;
+  max-width: 68.75rem;
+  margin: 1.8rem auto;
+}
+
+#servicos .fila .servico {
+  max-width: 21.8rem;
+  background-color: #fff;
+  padding: 1.8rem;
+  margin: 0 5px;
+  border-radius: 5px;
+  transition: .5s;
+}
+#servicos .fila .servico:hover {
+  box-shadow:  5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+}
+#servicos .fila .servico h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+#servicos .fila .servico .icon {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #d3d3d3;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+#servicos .fila .servico hr {
+  width: 30%;
+  margin: auto;
+  color: #000;
+  margin-bottom: 25px;
 }
