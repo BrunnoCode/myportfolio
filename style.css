@@ -251,3 +251,109 @@ html {
   color: #000;
   margin-bottom: 25px;
 }
+#servicos .fila .servico ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+#servicos .fila .servico p {
+  font-size: .9rem;
+  line-height: 1.3rem;
+}
+/* #################################### SKILLS SECTION ######################### */
+
+.container-skills {
+  background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, .8)), url('./img/skill-img.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  padding: 100px 0;
+  text-align: center;
+}
+.container-skills .skill {
+  max-width: 37.5rem;
+  margin: 1.8rem auto;
+}
+.container-skills .skill .info {
+  display: flex;
+  justify-content: space-between;
+}
+.container-skills .skill .lista {
+  display: inline-block;
+  margin-right: 20px;
+  height: 10px;
+  width: 10px;
+  background: #fff;
+}
+.container-skills .skill .barra {
+  background: #919191;
+  width: 100%;
+  height: 6px;
+  margin: 10px 0;
+}
+/* ################### ESTILO SE ATIVA COM JS ########## */
+.container-skills .skill .barra .barra-progresso1 {
+  background: #fff;
+  width: 55%;
+  height: 6px;
+  animation: progresso1 2s forwards;
+}
+
+.container-skills .skill .barra .barra-progresso2 {
+  background: #fff;
+  width: 15%;
+  height: 6px;
+  animation: progresso2 2s forwards;
+}
+.container-skills .skill .barra .barra-progresso3 {
+  background: #fff;
+  width: 30%;
+  height: 6px;
+  animation: progresso3 2s forwards;
+}
+.container-skills .skill .barra .barra-progresso4 {
+  background: #fff;
+  width: 65%;
+  height: 6px;
+  animation: progresso4 2s forwards;
+}
+/* ################### ANIMATION BARS ########## */
+@keyframes progresso1  {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 55%;
+  }
+}
+
+@keyframes progresso2  {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 15%;
+  }
+}
+
+@keyframes progresso3  {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+@keyframes progresso4  {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+
