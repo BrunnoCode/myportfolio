@@ -356,4 +356,108 @@ html {
   }
 }
 
+/* ################### PORTFOLIO SECTION ########## */
+#portfolio {
+  max-width: 68.75rem;
+  padding: 100px 0;
+  margin: auto;
+}
 
+#portfolio .titulo-section {
+  text-align: center;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: #111135;
+  text-decoration: underline;
+  text-decoration-color: #d3d3d3;
+  text-decoration-thickness: 5px;
+}
+#portfolio .fila {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+#portfolio .fila .projeto {
+  max-width: 28.12rem;
+  border: 1px solid #000;
+  margin: 0 10px;
+  position: relative;
+  overflow: hidden;
+}
+#portfolio .fila .projeto img {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1);
+  object-fit: cover;
+  transition: .5s;
+}
+#portfolio .fila .projeto img:hover {
+  filter: grayscale(0);
+}
+#portfolio .fila .projeto .info {
+  position: absolute;
+  left: 0;
+  background-color: rgba(0, 0, 0, .8);
+  color: #ff5080;
+  width: 100%;
+  padding: 10px;
+  opacity: 0;
+  bottom: -40px;
+  transition: .5s;
+}
+#portfolio .fila .projeto:hover .info {
+  opacity: 1;
+  bottom: 0;
+}
+/* ######################################### PORTFOLIO SECTION ############################################### */
+
+#contact {
+  padding: 100px 15px;
+}
+#contact .titulo-section {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #111135;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-decoration-color: #d3d3d3;
+  text-decoration-thickness: 5px;
+}
+#contact .container-form {
+  max-width: 68.75rem;
+  margin: auto;
+}
+#contact .container-form .fila {
+  margin-bottom: 15px;
+}
+#contact .container-form .metade {
+  display: flex;
+  justify-content: space-between;
+}
+#contact .container-form input,
+#contact .container-form textarea {
+  padding: 20px;
+  border-radius: 1.2rem;
+  border: none;
+  border: 1px solid #919191;
+}
+#contact .container-form .metade input {
+  width: 48%;
+}
+#contact .container-form .input-full {
+  width: 100%;
+}
+#contact .btn-enviar {
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  transition: .5s;
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+#contact .btn-enviar:hover {
+  background-color: #ff5080;
+  color: #fff;
+}
