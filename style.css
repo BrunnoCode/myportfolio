@@ -24,6 +24,7 @@ html {
   width: 100%;
   z-index: 100;
   top: 0;
+  backdrop-filter: blur(2px);
 }
 #inicio .content header .header-container {
   max-width: 68.7rem;
@@ -153,7 +154,12 @@ html {
   padding: 0 .6rem;
   width: 100%;
   border-radius: 1.2rem;
-  background-color: #c44670;
+  background-color: #c5c5db;
+  filter: grayscale(1);
+  transition: .5s;
+}
+#about .foto-content img:hover {
+  filter: grayscale(0);
 }
 #about .about .titulo-section {
   font-size: 1.3rem;
